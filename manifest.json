@@ -1,0 +1,14 @@
+{
+    "name": "Jokify",
+    "version": "1.0.0",
+    "description": "Laugh it out",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "storage"],
+    "author": "Atharv N & Deven N",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Jokify"
+    }
+}
+
+  
