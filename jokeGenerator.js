@@ -6,13 +6,11 @@ const GeneralText = document.getElementById('GeneralText');
 async function manipulateText(data){
   console.log(data);
   jokeText.innerHTML = `<h1>${data.setup}</h1> <br> ${data.punchline}`;
-  // hide the loader once the joke has been generated
-  loader.style.display = 'none';
+  loader.style.display = 'none'; // hide the loader once the joke has been generated
 }
 
 jokeButton.addEventListener('click', () => {
-  // show the loader when the joke button is clicked
-  loader.style.display = 'inline-block';
+  loader.style.display = 'inline-block'; // show the loader when the joke button is clicked
   GeneralText.style.display = 'none';
 
   if(jokeText.innerHTML != ''){
