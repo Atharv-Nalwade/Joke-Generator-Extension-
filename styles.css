@@ -21,23 +21,6 @@
 .jokify-btn {
     width: 100%;
 }
-
-/*   
-  .jokify-card {
-    max-width: 500px; 
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  
-   .jokify-btn {
-    width: 100%;
-    font-size: 1rem;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.5rem;
-    background-color: #007bff;
-    border-color: #007bff;
-  } 
-*/
   
   .jokify-btn:hover,
   .jokify-btn:focus {
