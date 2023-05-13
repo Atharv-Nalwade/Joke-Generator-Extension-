@@ -1,0 +1,61 @@
+This file has code to Push the jokes to teh firebase db
+
+const jokes = [
+  {
+    setup: "Why don’t scientists trust atoms?",
+    punchline: "Because they make up everything"
+  },
+  {
+    setup: "What do you call an alligator in a vest?",
+    punchline: "An investi-gator"
+  },
+  {
+    setup: "Why did the tomato turn red?",
+    punchline: "Because it saw the salad dressing"
+  },
+  {
+    setup: "What did one toilet say to the other toilet?",
+    punchline: "You look flushed."
+  },
+  {
+    setup: "Why don’t oysters give to charity?",
+    punchline: "Because they’re shellfish"
+  },
+  {
+    setup: "Why did the chicken join a band?",
+    punchline: "Because it already had drumsticks"
+  },
+  {
+    setup: "What do you call fake spaghetti?",
+    punchline: "An impasta"
+  },
+  {
+    setup: "What do you call an alligator in a vest?",
+    punchline: "An investi-gator"
+  },
+  {
+    setup: "What is the tallest building in the world?",
+    punchline: "The library because it has so many stories."
+  },
+  {
+    setup: "What do you get from a pampered cow?",
+    punchline: "Spoiled milk."
+  },
+  {
+    setup: "What do you call a bear with no teeth?",
+    punchline: "A gummy bear."
+  },
+  {
+    setup: "Why do cows have hooves instead of feet?",
+    punchline: "Because they lactose."
+  }
+];
+
+jokes.forEach((joke) => {
+  const newJokeRef = push(ref(database, 'jokes'));
+  set(newJokeRef, {
+    setup: joke.setup,
+    punchline: joke.punchline,
+    timestamp: new Date().toISOString(),
+  });
+});
